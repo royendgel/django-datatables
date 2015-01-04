@@ -12,7 +12,7 @@ from os.path import join, dirname
 
 
 setup(
-    name=django-datatables,
+    name="django-datatables",
     version='0.1.0',
     description='django-datatables',
     author='royendgel',
