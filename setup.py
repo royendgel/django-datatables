@@ -2,7 +2,6 @@
 """ django-datatables setup.py script """
 
 # django-datatables
-from django-datatables import __version__
 
 # system
 try:
@@ -13,7 +12,7 @@ from os.path import join, dirname
 
 
 setup(
-    name=__version__,
+    name=django-datatables,
     version='0.1.0',
     description='django-datatables',
     author='royendgel',
