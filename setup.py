@@ -17,11 +17,9 @@ setup(
     description='django-datatables',
     author='royendgel',
     author_email='royendgel@gmail.com',
-    packages=['django-datatables','django-datatables.test'],
+    packages=['datatables'],
     url='https://github.com/royendgel/django-datatables',
     long_description=open('README.txt').read(),
-    install_requires=[''],
-    test_suite='django-datatables.test',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
