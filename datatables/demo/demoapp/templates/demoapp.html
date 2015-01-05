@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>DEMO DATATABLE</title>
+    <link rel="stylesheet" href="{{STATIC_URL}}vendor/jquery.dataTables.min.css"/>
+    <script src="{{STATIC_URL}}vendor/jquery-1.11.2.min.js"></script>
+    <script src="{{STATIC_URL}}vendor/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+<table id="{{model_name}}">
+<thead>
+    <tr>
+        <th>ssdsa</th>
+        <th>ssdsa</th>
+    </tr>
+</thead>
+    <tbody>
+    <tr>
+        <td>ssss</td>
+        <td>sssss</td>
+    </tr>
+    </tbody>
+</table>
+
+<script>
+    $("table").dataTable({
+               "processing": true,
+                stateSave: true,
+                "serverSide": true,
+                "ajax": "/api/{{model_name}}",
+                "dom": 'T<"clear">lfrtip',
+
+    });
+
+</script>
+</body>
+</html>

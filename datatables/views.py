@@ -3,8 +3,9 @@ from django.db.models import Q
 import json
 import logging
 logger = logging.getLogger(__name__)
-class Datatable(object):
-  def __init__(self, model=None, fields=None):
+
+class Datatable:
+  def __init__(self, request=None, model=None, fields=None):
     self.fields = fields
     self.model = model
 
